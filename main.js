@@ -22,7 +22,7 @@ fetch('https://www.course-api.com/javascript-store-products')
 
     })
 
-    //task 3
+    //task 3 and 4
     const productList = document.getElementById('products');
 
     // Use a proxy to avoid CORS issues during development
@@ -38,4 +38,5 @@ fetch('https://www.course-api.com/javascript-store-products')
                 productList.appendChild(listItem);
             });
         })
-        .catch(error => console.error('Error fetching data:', error));
+        //error
+        .catch(error => console.error('failed to load products. please try again later.', error));
